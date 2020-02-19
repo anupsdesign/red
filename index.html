@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>JM Inspired Design</title>
+</head>
+
+<body>
+    <a href="index.html"><div class="logo">P - G</div></a>
+    <div class="white-space"></div>
+    <div class="nav-wrap">
+        <nav>
+            <button class="about" onclick='redirect("about.html")'>about</button><br>
+            <button class="services" onclick='redirect("services.html")'>services</button><br>
+            <button class="careers" onclick='redirect("careers.html")'>careers</button><br>
+            <button class="contact" onclick='redirect("contact.html")'>contact</button><br>
+        </nav>
+        <div class="container-fluid grey-color footer">
+            <div class="row">
+                <div class="col-sm">
+                    <h5>Red Astronaut</h5>
+                    <p>
+                        We design, develop and launch digital products that change the way we work, play and connect.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <h5>Currently</h5>
+                    <ul>
+                        <li>something goes here</li>
+                        <li>something goes here</li>
+                        <li>something goes here</li>
+                        <li>something goes here</li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h5>Follow</h5>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+    
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile', // AOS turned off on mobile
+            once: true
+        });
+    </script>
+    
+    
+    <script>
+        function redirect(value) {
+            setTimeout(function(){ 
+                window.location.href = value;
+            }, 1000);
+        }
+    </script>
+    <script>
+        $('nav button').click(function(){
+            $('nav button').addClass('slide-out-bottom')
+            $('.footer').addClass('slide-out-bottom')
+        })
+    </script>
+    <script>
+        $(function() {
+//            $(document).stop()
+            $('.container-wrap').addClass('slide-in-top')
+            $('nav button').removeClass('slide-out-bottom')
+            $('.footer').removeClass('slide-out-bottom')
+        });
+    </script>
+</body>
+
+</html>
