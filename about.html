@@ -143,12 +143,22 @@
                 </div>
                 <div class="col-sm">
                     <h5>Currently</h5>
-                    <ul>
-                        <li>something goes here</li>
-                        <li>something goes here</li>
-                        <li>something goes here</li>
-                        <li>something goes here</li><br>
-                    </ul>
+                    <div class="animation">
+                        <ul class="mask">
+                            <li>golfish</li>
+                            <li>dog</li>
+                            <li>cat</li>
+                            <li>hamster</li>
+                            <li>fox</li>
+                        </ul>
+                        <ul>
+                            <li>golfish</li>
+                            <li>dog</li>
+                            <li>cat</li>
+                            <li>hamster</li>
+                            <li>fox</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm">
                     <h5>Follow</h5>
@@ -173,11 +183,16 @@
     <!--AOS ends-->
     <!-- Refresh page on back or forward-->
     <script>
-        $(function() {
-            $(window).on('popstate', function() {
-                location.reload(true)
-            })
-        })
+//        $(function() {
+//            $(window).on('popstate', function() {
+//                location.reload(true)
+//            })
+//        })
+        
+        if(!!window.performance && window.performance.navigation.type == 2)
+        {
+            window.location.reload();
+        }
     </script>
     
     <script>
