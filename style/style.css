@@ -284,6 +284,57 @@ nav button.active:before{
     }
 }
 
+
+.animation {
+    display: inline-block;
+    vertical-align: top;
+    overflow: visible;
+    white-space: nowrap;
+    position: relative;
+}
+.animation ul {
+    list-style: none;
+    padding: 0 .5ex;
+    margin: 0;
+    overflow:hidden;
+}
+.animation li {
+    position: relative;
+    animation: cycle-5-items 6s ease-in-out alternate infinite;
+}
+.animation:hover li{
+    animation-play-state: paused;
+}
+.animation ul.mask {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@keyframes cycle-5-items {
+  0%, 10% {
+    transform: translateY(0%);
+  }
+  
+  15%, 35% {
+    transform: translateY(-100%);
+  }
+  
+  40%, 60% {
+    transform: translateY(-200%);
+  }
+  
+  65%, 85% {
+    transform: translateY(-300%);
+  }
+  
+  90%, 100% {
+    transform: translateY(-400%);
+  }
+}
+
 @media only screen and (min-height:1000px){
     .body-wrap{height: auto;}
     nav{
