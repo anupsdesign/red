@@ -10,7 +10,8 @@ body{background-color: #000;}
 .logo{
     position: fixed;
     top: 40px;
-    left: 43px;
+/*    left: 43px;*/
+    margin-left: -100px;
 /*    font-size: 2em;*/
     color: #fff;
     width: 80px;
@@ -66,7 +67,6 @@ ul{
 }
 ul li{
     list-style: none;
-    padding-left: 5px;
 }
 a{
     text-decoration: underline;
@@ -96,7 +96,7 @@ nav button.active:before{
     left: 0%;
     top: 50%;
     right: 0;
-    border-top: 15px solid red;
+    border-top: 1vw solid red;
     border-radius: 5px;
     opacity: .8;
     -webkit-transform:rotate(-5deg);
@@ -191,15 +191,6 @@ nav button.active:before{
     animation: loading 1.4s cubic-bezier(0.9, 0, 0.1, 1) forwards infinite;
     animation-direction: alternate;
 }
-.text{
-    color: red;
-    display: block;
-    position: absolute;
-    margin-top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-transform: uppercase;
-}
 .content {
     position: absolute;
     display: flex;
@@ -221,6 +212,54 @@ nav button.active:before{
     z-index: 2000;
 }
 
+.careers-content-padding{
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #fff;
+}
+.careers-content-padding a.back{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.careers-content-padding a.back:hover{
+    color: darkgray;
+}
+.careers-content-padding h1{
+    margin-bottom: 30px;
+}
+.careers-content-padding h5{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0;
+    color: darkgrey;
+}
+.careers-content-padding h4{
+    font-size: 1em;
+    margin: 0;
+    color: darkgrey;
+}
+.careers-content-padding p.bold-p{
+    font-weight: bold;
+    color: darkgrey;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.careers-content-padding button{
+    height: 40px;
+    width: 120px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.careers-content-padding ul.requirements{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.careers-content-padding ul.requirements li{
+    list-style: inherit;
+}
 @keyframes loading {
     0% {
         transform: translateX(-10em);
@@ -248,12 +287,14 @@ nav button.active:before{
     .body-wrap{height: auto;}
     nav{
         padding-top: 0;
+/*        background-color: antiquewhite;*/
     }
     .center-lg-screen{
-        position: relative;
-        top: 45%;
+        position: absolute;
+        top: 50%;
         transform: translateY(-50%);
     }
+    
 }
 @media only screen and (max-width:1400px){
     nav button{
@@ -265,8 +306,16 @@ nav button.active:before{
 }
 
 @media only screen and (max-width:800px){
+    .logo{
+        margin-left: 0px;
+    }
     .body-wrap{
         padding: 50px;
+/*        background-color: antiquewhite;*/
+    }
+    .careers-content-padding{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 

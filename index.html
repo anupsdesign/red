@@ -11,12 +11,25 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>JM Inspired Design</title>
+    <style>
+        .nav-wrap{
+            -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html"><div class="logo">P - G</div></a>
-    <div class="white-space"></div>
-    <div class="nav-wrap">
+    
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="body-wrap">    
+        <a href="index.html"><div class="logo">P - G</div></a>
+        <div class="white-space"></div>
+    </div>
+        <div class="nav-wrap">
         <nav>
             <button class="about" onclick='redirect("about.html")'>about</button><br>
             <button class="services" onclick='redirect("services.html")'>services</button><br>
@@ -37,7 +50,7 @@
                         <li>something goes here</li>
                         <li>something goes here</li>
                         <li>something goes here</li>
-                        <li>something goes here</li>
+                        <li>something goes here</li><br>
                     </ul>
                 </div>
                 <div class="col-sm">
@@ -83,6 +96,15 @@
             $('.footer').removeClass('slide-out-bottom')
         });
     </script>
+    
+    <script>
+        $(window).on("load",function(){
+            setTimeout(function(){ 
+                $(".loader-wrapper").fadeOut("slow");
+            }, 1500);
+        });
+    </script>
+
 </body>
 
 </html>

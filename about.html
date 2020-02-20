@@ -16,12 +16,9 @@
 </head>
 
 <body>
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-        <div class="text">now loading</div>
-    </div>
-    <div class="logo">P - G</div>
+
     <div class="body-wrap">
+        <div class="logo">P - G</div>
             <div class="container-wrap">
                 <div class="white-space"></div>
                 <div class="about-content">
@@ -150,7 +147,7 @@
                         <li>something goes here</li>
                         <li>something goes here</li>
                         <li>something goes here</li>
-                        <li>something goes here</li>
+                        <li>something goes here</li><br>
                     </ul>
                 </div>
                 <div class="col-sm">
@@ -202,23 +199,7 @@
             $('.footer').removeClass('slide-out-bottom')
         });
     </script>
-    <script>
-        i = 0;
-        setInterval(function() {
-            i = ++i % 4;
-            $(".text").text("now loading " + Array(i+1).join("."));
-        }, 800);
-    </script>
-    <script>
-//        $(window).on("load",function(){
-//            $(".loader-wrapper").fadeOut("slow");
-//        });
-        $(window).on("load",function(){
-            setTimeout(function(){ 
-                $(".loader-wrapper").fadeOut("slow");
-            }, 1500);
-        });
-    </script>
+
 </body>
 
 </html>
