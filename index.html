@@ -92,16 +92,27 @@
     </script>
     <script>
         $(function() {
-            $('nav button').removeClass('slide-out-bottom')
-            $('.footer').removeClass('slide-out-bottom')
-            
+//            if ( $( "nav button" ).hasClass( "slide-out-bottom" ) ){
+//                $('nav button').removeClass('slide-out-bottom')
+//            }
+//            if ( $( ".footer" ).hasClass( "slide-out-bottom" ) ){
+//                $('.footer').removeClass('slide-out-bottom')
+//            }
+//            $('nav button').addClass('slide-in-bottom')
+//            $('.footer').addClass('slide-in-bottom')
         })
     </script>
     
     <script>
         $(window).on("load",function(){
             setTimeout(function(){ 
-                $(".loader-wrapper").fadeOut("slow");
+                $(".loader-wrapper").fadeOut("slow")
+                if ( $( "nav button" ).hasClass( "slide-out-bottom" ) ){
+                    $('nav button').removeClass('slide-out-bottom')
+                }
+                if ( $( ".footer" ).hasClass( "slide-out-bottom" ) ){
+                    $('.footer').removeClass('slide-out-bottom')
+                }
                 $('.nav-wrap').addClass('slide-in-bottom')
             }, 1500);
         });
