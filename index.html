@@ -75,6 +75,14 @@
         });
     </script>
     
+    <!-- Refresh page on back or forward-->
+    <script>
+        $(function() {
+            $(window).on('popstate', function() {
+                location.reload(true)
+            })
+        })
+    </script>
     
     <script>
         function redirect(value) {
