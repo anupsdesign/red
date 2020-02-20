@@ -78,6 +78,7 @@ h5{
 }
 .grey-color{
     color: darkgrey;
+    margin-bottom: 50px;
 }
 h3{color: #fff;}
 
@@ -306,17 +307,22 @@ nav button.active:before{
 }
 
 @media only screen and (max-width:800px){
+    body{overflow-x: hidden;}
     nav button{
         font-size:3.5em;
     }
     .logo{
         margin-left: 0px;
     }
+    nav{
+        padding-left: 10px;
+    }
     .nav-wrap{
-        padding: 20px;
+        padding: 0;
+
     }
     .body-wrap{
-        padding: 50px;
+        padding: 20px;
     }
     .careers-content-padding{
         padding-left: 0px;
