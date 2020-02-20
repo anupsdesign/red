@@ -88,14 +88,11 @@
         function redirect(value) {
             setTimeout(function(){ 
                 window.location.href = value
-//                $('nav button').removeClass('slide-out-bottom')
-//                $('.footer').removeClass('slide-out-bottom')
             }, 600);
             setTimeout(function(){ 
                 $('nav button').removeClass('slide-out-bottom')
                 $('.footer').removeClass('slide-out-bottom')
-//                console.log("Should work!")
-            }, 620);
+            }, 640);
         }
     </script>
     <script>
@@ -104,16 +101,6 @@
             $('.footer').addClass('slide-out-bottom')
         })
     </script>
-<!--
-    <script>
-        $(function() {
-            $('nav button').removeClass('slide-out-bottom')
-            $('.footer').removeClass('slide-out-bottom')
-//            $('nav button').addClass('slide-in-bottom')
-//            $('.footer').addClass('slide-in-bottom')
-        })
-    </script>
--->
     
     <script>
         $(window).on("load",function(){
@@ -121,8 +108,6 @@
                 $(".loader-wrapper").fadeOut("slow")
                 $('.nav-wrap').addClass('slide-in-bottom')
             }, 1500);
-            $('nav button').removeClass('slide-out-bottom')
-                $('.footer').removeClass('slide-out-bottom')
         });
     </script>
 
