@@ -306,6 +306,9 @@ nav button.active:before{
 }
 
 @media only screen and (max-width:800px){
+    nav button{
+        font-size:3.5em;
+    }
     .logo{
         margin-left: 0px;
     }
@@ -314,8 +317,12 @@ nav button.active:before{
 /*        background-color: antiquewhite;*/
     }
     .careers-content-padding{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .careers-content-padding ul.requirements{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
