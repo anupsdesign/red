@@ -181,20 +181,6 @@
         });
     </script>
     <!--AOS ends-->
-    <!-- Refresh page on back or forward-->
-    <script>
-//        $(function() {
-//            $(window).on('popstate', function() {
-//                location.reload(true)
-//            })
-//        })
-        
-//        if(!!window.performance && window.performance.navigation.type == 2)
-//        {
-//            alert("Used the back/forward btn")
-//            window.location.reload();
-//        }
-    </script>
     
     <script>
         $(".logo").click(function() {
@@ -210,7 +196,7 @@
             }, 1000);
         }
     </script>
-    <script>
+   <script>
         $('nav button').click(function(){
             $('nav button').addClass('slide-out-bottom')
             $('.footer').addClass('slide-out-bottom')
@@ -219,11 +205,12 @@
     <script>
         $(function() {
             $('.container-wrap').addClass('slide-in-top')
-            $('nav button').addClass('slide-in-bottom')
-            $('.footer').addClass('slide-in-bottom')
-        });
+            $('.nav-wrap').addClass('slide-in-bottom')
+        })
     </script>
 
+    <script>
+    </script>
 </body>
 
 </html>
