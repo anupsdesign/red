@@ -190,29 +190,36 @@
         });
     </script>
     <script>
-        function redirect(value) {
-            setTimeout(function(){ 
-                window.location.href = value;
-            }, 600);
-        }
-    </script>
-   <script>
-       
+        if(!!window.performance && window.performance.navigation.type == 2)
+         {
+             $('nav button').removeClass('slide-out-bottom')
+             $('.footer').removeClass('slide-out-bottom')
+             window.location.reload();
+         }
     </script>
     <script>
-        $(function() {
-            $('nav button').removeClass('slide-out-bottom')
-            $('.footer').removeClass('slide-out-bottom')
-            
-            $('.container-wrap').addClass('slide-in-top')
-//            $('nav button').addClass('slide-in-bottom')
-//            $('.footer').addClass('slide-in-bottom')
-            
-            $('nav button').click(function(){
-                $('nav button').addClass('slide-out-bottom')
-                $('.footer').addClass('slide-out-bottom')
-            })
+        function redirect(value) {
+            setTimeout(function(){ 
+                window.location.href = value
+            }, 600);
+            setTimeout(function(){ 
+                $('nav button').removeClass('slide-out-bottom')
+                $('.footer').removeClass('slide-out-bottom')
+            }, 620);
+        }
+    </script>
+    <script>
+        $('nav button').click(function(){
+            $('nav button').addClass('slide-out-bottom')
+            $('.footer').addClass('slide-out-bottom')
         })
+    </script>
+
+    <script>
+        $(window).on("load",function(){
+            $('.container-wrap').addClass('slide-in-top')
+                $('.nav-wrap').addClass('slide-in-bottom')
+        });
     </script>
 
     <script>
