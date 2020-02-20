@@ -87,9 +87,9 @@
     <script>
         function redirect(value) {
             setTimeout(function(){ 
-                window.location.href = value;
-                $('nav button').removeClass('slide-out-bottom')
-                $('.footer').removeClass('slide-out-bottom')
+                window.location.href = value
+//                $('nav button').removeClass('slide-out-bottom')
+//                $('.footer').removeClass('slide-out-bottom')
             }, 600);
         }
     </script>
@@ -99,6 +99,7 @@
             $('.footer').addClass('slide-out-bottom')
         })
     </script>
+<!--
     <script>
         $(function() {
             $('nav button').removeClass('slide-out-bottom')
@@ -107,6 +108,7 @@
 //            $('.footer').addClass('slide-in-bottom')
         })
     </script>
+-->
     
     <script>
         $(window).on("load",function(){
@@ -116,6 +118,8 @@
                 $('.footer').removeClass('slide-out-bottom')
                 $('.nav-wrap').addClass('slide-in-bottom')
             }, 1500);
+            $('nav button').removeClass('slide-out-bottom')
+                $('.footer').removeClass('slide-out-bottom')
         });
     </script>
 
