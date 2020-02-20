@@ -76,11 +76,20 @@
             once: true
         });
     </script>
-    
+    <script>
+        if(!!window.performance && window.performance.navigation.type == 2)
+         {
+             $('nav button').removeClass('slide-out-bottom')
+             $('.footer').removeClass('slide-out-bottom')
+             window.location.reload();
+         }
+    </script>
     <script>
         function redirect(value) {
             setTimeout(function(){ 
                 window.location.href = value;
+                $('nav button').removeClass('slide-out-bottom')
+                $('.footer').removeClass('slide-out-bottom')
             }, 1000);
         }
     </script>
