@@ -12,10 +12,12 @@
 
     <title>JM Inspired Design</title>
     <style>
+/*
         .nav-wrap{
-            -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
-            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+            -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
         }
+*/
     </style>
 </head>
 
@@ -83,11 +85,11 @@
 //            })
 //        })
         
-        if(!!window.performance && window.performance.navigation.type == 2)
-        {
-            alert("Used the back/forward btn")
-            window.location.reload();
-        }
+//        if(!!window.performance && window.performance.navigation.type == 2)
+//        {
+//            alert("Used the back/forward btn")
+//            window.location.reload();
+//        }
     </script>
     
     <script>
@@ -107,8 +109,8 @@
         $(function() {
 //            $(document).stop()
             $('.container-wrap').addClass('slide-in-top')
-//            $('nav button').removeClass('slide-out-bottom')
-//            $('.footer').removeClass('slide-out-bottom')
+            $('nav button').addClass('slide-in-bottom')
+            $('.footer').addClass('slide-in-bottom')
         });
     </script>
     
@@ -116,6 +118,7 @@
         $(window).on("load",function(){
             setTimeout(function(){ 
                 $(".loader-wrapper").fadeOut("slow");
+                $('.nav-wrap').addClass('slide-in-bottom')
             }, 1500);
         });
     </script>

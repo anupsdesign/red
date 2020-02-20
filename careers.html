@@ -155,11 +155,11 @@
 //            })
 //        })
         
-        if(!!window.performance && window.performance.navigation.type == 2)
-        {
-            alert("Used the back/forward btn")
-            window.location.reload();   
-        }
+//        if(!!window.performance && window.performance.navigation.type == 2)
+//        {
+//            alert("Used the back/forward btn")
+//            window.location.reload();   
+//        }
     </script>
     <script>
         $(".logo").click(function() {
@@ -184,8 +184,8 @@
     <script>
         $(function() {
             $('.container-wrap').addClass('slide-in-top')
-            $('nav button').removeClass('slide-out-bottom')
-            $('.footer').removeClass('slide-out-bottom')
+            $('nav button').addClass('slide-in-bottom')
+            $('.footer').addClass('slide-in-bottom')
         });
     </script>
 
