@@ -312,9 +312,11 @@ nav button.active:before{
     .logo{
         margin-left: 0px;
     }
+    .nav-wrap{
+        padding: 20px;
+    }
     .body-wrap{
         padding: 50px;
-/*        background-color: antiquewhite;*/
     }
     .careers-content-padding{
         padding-left: 0px;
