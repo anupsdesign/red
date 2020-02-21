@@ -373,9 +373,11 @@ nav button.active:before{
     }
     nav{
         padding: 0px;
+        text-align: left;
     }
     .nav-wrap{
         padding: 0;
+        background-color: #222;
     }
     .body-wrap{
         padding: 20px;
