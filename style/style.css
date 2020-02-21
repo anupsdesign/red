@@ -92,8 +92,11 @@ nav button.contact.slide-out-bottom{animation-delay: .3s;}
 nav button.active{
     position: relative;
     transition: .4s;
+/*    background-color: pink;*/
 }
 nav button.active:before{
+    width: 90%;
+    margin: auto;
     transition: .4s;
     position: absolute;
     content: "";
@@ -377,7 +380,6 @@ nav button.active:before{
     }
     .nav-wrap{
         padding: 0;
-        background-color: #222;
     }
     .body-wrap{
         padding: 20px;
