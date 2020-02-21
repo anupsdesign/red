@@ -372,10 +372,12 @@ nav button.active:before{
         margin-left: 0px;
     }
     nav{
-        padding-left: 0px;
+        padding: 0px;
+        text-align: left;
     }
     .nav-wrap{
         padding: 0;
+        background-color: #222;
     }
     .body-wrap{
         padding: 20px;
