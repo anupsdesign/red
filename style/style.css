@@ -56,7 +56,10 @@ nav button:hover{
     height: 100px;
 }
 .nav-wrap{
+    max-width: 1400px;
+    margin: auto;
     padding: 50px;
+/*    background-color: #222;*/
 }
 nav{
     padding-bottom: 90px;
@@ -214,6 +217,8 @@ nav button.active:before{
 }
 
 .careers-content-padding{
+    max-width: 1400px;
+    margin: auto;
     padding-left: 80px;
     padding-right: 80px;
     color: #fff;
@@ -342,6 +347,7 @@ nav button.active:before{
 /*        background-color: antiquewhite;*/
     }
     .center-lg-screen{
+        max-width: 1400px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -366,14 +372,18 @@ nav button.active:before{
         margin-left: 0px;
     }
     nav{
-        padding-left: 10px;
+        padding-left: 0px;
     }
     .nav-wrap{
         padding: 0;
-
     }
     .body-wrap{
         padding: 20px;
+    }
+    .about-content h1{
+        color: #fff;
+        font-size: 2em;
+        margin-bottom: 80px;
     }
     .careers-content-padding{
         padding-left: 0px;
