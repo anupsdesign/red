@@ -92,7 +92,6 @@ nav button.contact.slide-out-bottom{animation-delay: .3s;}
 nav button.active{
     position: relative;
     transition: .4s;
-/*    background-color: pink;*/
 }
 nav button.active:before{
     width: 90%;
@@ -103,7 +102,7 @@ nav button.active:before{
     left: 0%;
     top: 50%;
     right: 0;
-    border-top: 1vw solid red;
+    border-top: 1vw solid hotpink;
     border-radius: 5px;
     opacity: .8;
     -webkit-transform:rotate(-5deg);
