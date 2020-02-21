@@ -397,7 +397,16 @@ nav button.active:before{
         padding-right: 15px;
     }
 }
-
+@media only screen and (max-width:500px){
+    nav button.active:before{
+        display: none;
+    }
+    nav button{padding: 0;}
+    nav button.active{
+        border-bottom: 5px solid red;
+        border-bottom-right-radius: 10px;
+    }
+}
 /*slide down animation*/
 .slide-out-bottom {
     -webkit-animation: slide-out-bottom 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
